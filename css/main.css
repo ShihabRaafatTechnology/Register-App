@@ -1,0 +1,65 @@
+/* Start Rulez */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --success:#2ecc71;
+    --error:#e74c3c;
+    --gray: #adb5bd;
+    --red:#f00;
+    --blood: #6a040f;
+}
+body{
+    background-color: #020202;
+}
+.form-control:focus{
+    box-shadow: none
+}
+.box-shadow{
+    box-shadow: 0px 0px 15px 0px var(--gray);
+}
+.user-input.success .form-control{
+    outline: none;
+    border-color: var(--success);
+    box-shadow: 0px 0px 15px 0px var(--success);
+}
+.user-input.error .form-control{
+    outline: none;
+    border-color: var(--error);
+    box-shadow: 0px 0px 15px 0px var(--error);
+}
+@font-face {
+    font-family: "docktrin";
+    src: url(../fonts/docktrin.ttf);
+}
+/* End Rulez */
+
+/* Start Register */
+.register .img-register{
+    background-image: url("../img/color.png");
+    background-size: cover;
+    background-position: center;
+}
+.register .display-3{
+    font-family: "docktrin";
+    color: var(--blood);
+}
+.register-form input[type="submit"]{
+    transition: 0.3s linear;
+    box-shadow: none;
+}
+.register-form input[type="submit"]:hover{
+    background-color: var(--red);
+    transform: scale(1.1);
+}
+.user-input small{
+    display: none;
+}
+.user-input.error small{
+    display: block;
+}
+/* End Register */
